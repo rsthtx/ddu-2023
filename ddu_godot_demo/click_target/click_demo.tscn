@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmlxrsfyl2y2b"]
+
+[ext_resource type="Script" path="res://click_target/ClickDemo.gd" id="1_r8txf"]
+[ext_resource type="PackedScene" uid="uid://drs7g2xrpr81v" path="res://click_target/click_target.tscn" id="2_76vnr"]
+[ext_resource type="Texture2D" uid="uid://b4a2ytsm6h0yb" path="res://icon.svg" id="2_se7vd"]
+
+[node name="ClickDemo" type="Node2D"]
+script = ExtResource("1_r8txf")
+
+[node name="ClickTarget" parent="." instance=ExtResource("2_76vnr")]
+position = Vector2(222, 180)
+
+[node name="ClickTarget2" parent="." instance=ExtResource("2_76vnr")]
+position = Vector2(665, 313)
+
+[node name="ClickTarget3" parent="." instance=ExtResource("2_76vnr")]
+position = Vector2(582, 116)
+
+[node name="Mover" type="Sprite2D" parent="."]
+modulate = Color(0.470588, 1, 0.458824, 1)
+position = Vector2(338, 385)
+texture = ExtResource("2_se7vd")

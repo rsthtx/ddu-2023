@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwr5j0fir4q0y"]
+
+[ext_resource type="PackedScene" uid="uid://cc00ebb3itk76" path="res://obstacle_destruction/player.tscn" id="1_ucofq"]
+[ext_resource type="PackedScene" uid="uid://c5xws2mcwucdu" path="res://obstacle_destruction/obstacle.tscn" id="2_716js"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ucofq")]
+position = Vector2(214, 248)
+
+[node name="Player2" parent="." instance=ExtResource("1_ucofq")]
+position = Vector2(487, 60)
+direction = Vector2(0, 1)
+
+[node name="Player3" parent="." instance=ExtResource("1_ucofq")]
+position = Vector2(99, 332)
+
+[node name="Obstacle" parent="." instance=ExtResource("2_716js")]
+position = Vector2(512, 313)
+
+[node name="Obstacle2" parent="." instance=ExtResource("2_716js")]
+position = Vector2(536, 576)
